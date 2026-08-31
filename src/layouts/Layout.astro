@@ -1,0 +1,103 @@
+---
+interface Props {
+	title: string;
+	lang: 'ru' | 'en';
+}
+
+const { title, lang } = Astro.props;
+---
+
+<!doctype html>
+<html lang={lang} class="scroll-smooth">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+	</head>
+	<body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 font-sans antialiased transition-colors duration-300">
+		<div class="fixed top-0 left-0 w-full h-1 bg-gradient-to-r from-primary via-secondary to-primary z-50"></div>
+		
+		<header class="sticky top-0 z-40 w-full backdrop-blur-md bg-white/70 dark:bg-slate-950/70 border-b border-slate-200 dark:border-slate-800">
+			<nav class="container mx-auto px-4 h-16 flex items-center justify-between">
+				<a href={`/CV/${lang}/`} class="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
+					PM / CV
+				</a>
+				<div class="flex items-center gap-6">
+					<a href="/CV/ru/" class={`text-sm font-medium hover:text-primary transition-colors ${lang === 'ru' ? 'text-primary underline decoration-2 underline-offset-4' : 'text-slate-500'}`}>RU</a>
+					<a href="/CV/en/" class={`text-sm font-medium hover:text-primary transition-colors ${lang === 'en' ? 'text-primary underline decoration-2 underline-offset-4' : 'text-slate-500'}`}>EN</a>
+					<button id="print-btn" class="text-slate-500 hover:text-primary transition-colors">
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V2h12v7"></path><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+					</button>
+				</div>
+			</nav>
+		</header>
+
+		<main class="container mx-auto px-4 py-12 max-w-4xl opacity-0 translate-y-4 transition-all duration-700 ease-out" id="main-content">
+			<slot />
+		</main>
+
+		<footer class="border-t border-slate-200 dark:border-slate-800 py-12 bg-white dark:bg-slate-950 mt-12 print:hidden">
+			<div class="container mx-auto px-4 text-center">
+				<p class="text-slate-500 text-sm">
+					&copy; {new Date().getFullYear()} Pavel Minenkov. Built with Astro & Tailwind.
+				</p>
+			</div>
+		</footer>
+
+		<button id="scroll-top" class="fixed bottom-8 right-8 p-3 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-full shadow-lg opacity-0 translate-y-10 transition-all duration-300 hover:scale-110 active:scale-95 z-50">
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+		</button>
+
+		<script>
+			// Fade in content
+			window.addEventListener('DOMContentLoaded', () => {
+				const main = document.getElementById('main-content');
+				if (main) {
+					main.classList.remove('opacity-0', 'translate-y-4');
+				}
+			});
+
+			// Scroll to top
+			const scrollBtn = document.getElementById('scroll-top');
+			window.addEventListener('scroll', () => {
+				if (window.scrollY > 300) {
+					scrollBtn?.classList.remove('opacity-0', 'translate-y-10');
+				} else {
+					scrollBtn?.classList.add('opacity-0', 'translate-y-10');
+				}
+			});
+			scrollBtn?.addEventListener('click', () => {
+				window.scrollTo({ top: 0, behavior: 'smooth' });
+			});
+
+			// Print
+			document.getElementById('print-btn')?.addEventListener('click', () => {
+				window.print();
+			});
+		</script>
+	</body>
+</html>
+
+<style is:global>
+	:root {
+		--primary: #3b82f6;
+		--secondary: #6366f1;
+	}
+	
+	/* Typography fixes for Markdown */
+	.prose h1 { @apply text-4xl font-extrabold mb-8 text-slate-900 dark:text-white; }
+	.prose h2 { @apply text-2xl font-bold mt-12 mb-6 pb-2 border-b border-slate-200 dark:border-slate-800 text-slate-800 dark:text-slate-200; }
+	.prose h3 { @apply text-xl font-semibold mt-8 mb-4 text-slate-700 dark:text-slate-300; }
+	.prose p { @apply mb-6 leading-relaxed text-slate-600 dark:text-slate-400; }
+	.prose ul { @apply list-disc list-outside ml-6 mb-6 space-y-2 text-slate-600 dark:text-slate-400; }
+	.prose li { @apply pl-2; }
+	.prose strong { @apply font-semibold text-slate-900 dark:text-white; }
+	.prose a { @apply text-primary hover:underline font-medium transition-all; }
+	.prose hr { @apply my-12 border-slate-200 dark:border-slate-800; }
+	.prose blockquote { @apply border-l-4 border-primary pl-6 italic my-8 text-slate-500 dark:text-slate-400; }
+</style>

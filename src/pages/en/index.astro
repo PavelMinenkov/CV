@@ -1,0 +1,13 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getEntry, render } from 'astro:content';
+
+const entry = await getEntry('cv', 'en');
+const { Content } = await render(entry);
+---
+
+<Layout title="Pavel Minenkov | CV" lang="en">
+	<article class="prose max-w-none dark:prose-invert">
+		<Content />
+	</article>
+</Layout>

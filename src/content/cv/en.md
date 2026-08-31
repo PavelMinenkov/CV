@@ -118,7 +118,7 @@ AI-native company. Role: backend team leadership and AI/LLM engineering.
 B.S. in Mathematical and Software Support of Communication Systems.
 
 ## Languages
-- Russian (Native), English (B1)
+- Russian (Native), English (C1)
 
 ---
 
