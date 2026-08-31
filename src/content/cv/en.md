@@ -17,7 +17,7 @@
 **Methodologies:** DDD, CQRS, SOLID, GRASP, KISS, Hexagonal Architecture, FSD, DevOps, TDD.
 
 **Technical Skills:**
-- **Advanced:** Python (asyncio, gevent), Pytest, REST API, GitLab, API Design, SQLAlchemy, FastAPI, Flask, DRF, Redis.
+- **Advanced:** Python (asyncio, gevent), Go (Golang), Pytest, REST API, GitLab, API Design, SQLAlchemy, FastAPI, Flask, DRF, Redis.
 - **AI/LLM:** OpenAI/Anthropic API, LangChain, RAG pipelines, Prompt Engineering, Multi-agent orchestration, Vector Search (Qdrant), Embeddings.
 - **Infrastructure:** Docker, Kubernetes, ArgoCD, Ansible, Terraform, CI/CD, ClickHouse, PostgreSQL, RabbitMQ, Kafka.
 - **Monitoring & Observability:** Grafana Stack, Sentry, Prometheus, Arize Phoenix (LLM tracing), OpenTelemetry.
@@ -49,6 +49,7 @@ AI-native company. Role: backend team leadership and AI/LLM engineering.
 *March 2025 — August 2025*
 
 - **Workflow Orchestration:** Developed fault-tolerant order processing flows using **Temporal**. Implemented complex scheduling and role-based assignment logic, ensuring reliability and consistency in multi-step business transactions.
+- **High-Performance Gateway:** Designed and implemented a high-performance **API Gateway using Go**. Unified authentication, rate limiting, and request logging across the entire microservice ecosystem.
 - **Data-Driven Management:** Built analytical dashboards to support the transition to "specification-driven agentic development." Leveraged **DevLake** to collect and visualize team performance metrics, providing a data-backed foundation for process improvements.
 - **FinTech & Payments:** Owned the end-to-end payment infrastructure. Implemented integration with **Sber API** (payments, card binding, fiscal receipts/FZ-54 compliance), defined frontend-backend contracts, and architected background transaction processing logic.
 - **Architecture & Delivery:** Managed feature delivery across multiple environments (dev/stage/prod/demo). Contributed to core architectural decisions, including story decomposition and role-specific background process optimization.
@@ -64,6 +65,7 @@ AI-native company. Role: backend team leadership and AI/LLM engineering.
 **Project: Oracul Analytics (app.oracul.io)**
 *August 2023 — May 2024*
 - **Multi-chain Data Engineering:** Architected and implemented scalable data pipelines for collection, aggregation, and normalization of events across 20+ blockchain networks (EVM-compatible, Solana, etc.).
+- **Go Microservices:** Developed performance-critical microservices in **Go** for concurrent blockchain data ingestion and parsing, significantly reducing transaction processing latency.
 - **Performance Optimization:** Tuned the FastAPI-based dashboard backend to ensure real-time analytics rendering for 10+ sophisticated UI components.
 - **Integrations & RBAC:** Executed deep integrations with 5+ third-party data providers (CoinMarketCap, CryptoRank, ZenDesk, Sentiment). Developed a flexible RBAC system to support a freemium marketing model.
 - **Impact:** Doubled the delivery speed of analytical features by building a unified data access layer using SQLModel, eliminating redundant schema definitions and manual data mapping.
