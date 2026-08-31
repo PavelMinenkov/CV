@@ -29,6 +29,8 @@
 
 ---
 
+<div class="experience-container">
+
 ## Опыт работы
 
 ### Senior Python Developer / Team Lead — Артеус (arteus.io)
@@ -121,6 +123,8 @@ AI-native компания. Роль: руководство backend-коман�
 - Обеспечение кросс-платформенной поддержки (Windows/Linux) и работа с драйверами специализированного оборудования.
 
 **Стек:** C++, Qt, STL, Boost, DSP algorithms, WinAPI/POSIX.
+
+</div>
 
 ---
 

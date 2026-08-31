@@ -24,6 +24,8 @@
 
 ---
 
+<div class="experience-container">
+
 ## Work Experience
 
 ### Senior Python Developer / Team Lead — Arteus (arteus.io)
@@ -111,6 +113,8 @@ AI-native company. Role: backend team leadership and AI/LLM engineering.
 - Ensured cross-platform support (Windows/Linux) and interfaced with specialized hardware drivers.
 
 **Stack:** C++, Qt, STL, Boost, DSP algorithms, WinAPI/POSIX.
+
+</div>
 
 ---
 
