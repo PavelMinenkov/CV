@@ -4,6 +4,7 @@
 ## Contact
 - **Phone:** +7 911 120-92-22 (preferred)
 - **Email:** [p.minenkof@ya.ru](mailto:p.minenkof@ya.ru)
+- **Telegram:** [@pyblo](https://t.me/pyblo) (tg..)
 - **Location:** Saint Petersburg, Russia (open to relocation)
 - **Format:** Remote
 - **Experience:** 14+ years (Python: 8+ years)

@@ -20,6 +20,7 @@ Welcome to my CV repository.
 ## 🔗 Links
 
 - **GitHub:** [@PavelMinenkov](https://github.com/PavelMinenkov)
+- **Telegram:** [@pyblo](https://t.me/pyblo)
 - **LinkedIn:** [Pavel Minenkov](https://www.linkedin.com/in/pavelminenkov/)
 
 ---
