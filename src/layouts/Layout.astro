@@ -169,9 +169,16 @@ const { title, lang } = Astro.props;
 	.prose ul { @apply list-disc list-outside ml-6 mb-6 space-y-2 text-slate-600 dark:text-slate-400; }
 	.prose li { @apply pl-2; }
 	.prose strong { @apply font-semibold text-slate-900 dark:text-white; }
-	.prose a { @apply text-primary hover:underline font-medium transition-all; }
+	.prose a {
+		color: var(--primary);
+		@apply hover:underline font-medium transition-all;
+	}
 	.prose hr { @apply my-12 border-slate-200 dark:border-slate-800; }
-	.prose blockquote { @apply border-l-4 border-primary pl-6 italic my-8 text-slate-500 dark:text-slate-400; }
+	.prose blockquote {
+		border-left-width: 4px;
+		border-color: var(--primary);
+		@apply pl-6 italic my-8 text-slate-500 dark:text-slate-400;
+	}
 
 	/* Timeline Visuals */
 	@media (min-width: 1024px) {
@@ -183,7 +190,8 @@ const { title, lang } = Astro.props;
 			@apply absolute left-0 top-1/2 -translate-y-1/2 w-4 h-4 bg-white dark:bg-slate-900 border-2 border-slate-200 dark:border-slate-800 rounded-full z-10 transition-colors duration-300;
 		}
 		.prose h3.text-primary::before {
-			@apply border-primary bg-primary;
+			border-color: var(--primary);
+			background-color: var(--primary);
 		}
 		.experience-container {
 			@apply relative;
@@ -196,6 +204,9 @@ const { title, lang } = Astro.props;
 
 	/* Skill Badges */
 	.prose ul li strong {
-		@apply bg-slate-100 dark:bg-slate-800 px-2 py-0.5 rounded text-sm font-medium border border-slate-200 dark:border-slate-700 hover:border-primary dark:hover:border-primary transition-all duration-200;
+		@apply bg-slate-100 dark:bg-slate-800 px-2 py-0.5 rounded text-sm font-medium border border-slate-200 dark:border-slate-700 transition-all duration-200;
+	}
+	.prose ul li strong:hover {
+		border-color: var(--primary);
 	}
 </style>
