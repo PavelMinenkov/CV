@@ -9,9 +9,10 @@ Welcome to my CV repository.
 
 ## 🛠 Tech Stack
 
-- **Languages:** Python (Expert: asyncio, gevent, pytest), Rust (Familiar)
-- **Architecture:** DDD, CQRS, Hexagonal Architecture, FSD, SOLID, TDD
+- **Languages:** Python (Expert: asyncio, gevent, pytest), C++ (Prior experience), Rust (Familiar)
+- **Architecture:** DDD, CQRS, Hexagonal Architecture, FSD, SOLID, TDD, DSP (Signal Processing)
 - **AI/LLM:** RAG Pipelines, Multi-agent systems, Prompt Engineering, Vector Search (Qdrant), OpenAI/Anthropic, LangChain
+- **Blockchain & Identity:** Self-Sovereign Identity (SSI), Hyperledger Aries/Indy, DIDComm, DLT Node management
 - **Backend & DB:** FastAPI, Django, Flask, PostgreSQL, ClickHouse, Redis, MongoDB, SQLAlchemy, RabbitMQ, Kafka
 - **DevOps & Cloud:** Kubernetes, Docker, Terraform, Ansible, ArgoCD, CI/CD (GitLab, GitHub, TeamCity)
 - **Monitoring:** Grafana Stack, Sentry, Prometheus, Arize Phoenix, OpenTelemetry
