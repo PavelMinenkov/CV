@@ -182,23 +182,26 @@ const { title, lang } = Astro.props;
 
 	/* Timeline Visuals */
 	@media (min-width: 1024px) {
-		.prose h3 {
+		.experience-container {
 			@apply relative pl-8;
+		}
+		.experience-container::before {
+			content: '';
+			@apply absolute left-2 top-4 bottom-4 w-0.5 bg-slate-200 dark:bg-slate-800;
+		}
+		.prose h3 {
+			@apply relative;
 		}
 		.prose h3::before {
 			content: '';
-			@apply absolute left-0 top-1/2 -translate-y-1/2 w-4 h-4 bg-white dark:bg-slate-900 border-2 border-slate-200 dark:border-slate-800 rounded-full z-10 transition-colors duration-300;
+			@apply absolute -left-6 top-1/2 -translate-y-1/2 w-4 h-4 bg-white dark:bg-slate-900 border-2 border-slate-200 dark:border-slate-800 rounded-full z-10 transition-colors duration-300;
 		}
 		.prose h3.text-primary::before {
 			border-color: var(--primary);
 			background-color: var(--primary);
 		}
-		.experience-container {
-			@apply relative;
-		}
-		.experience-container::before {
-			content: '';
-			@apply absolute left-2 top-4 bottom-4 w-0.5 bg-slate-200 dark:bg-slate-800;
+		.experience-container h2 {
+			@apply -ml-8 mb-12;
 		}
 	}
 
