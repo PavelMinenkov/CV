@@ -1,5 +1,5 @@
 # Pavel Minenkov
-**Senior Python Developer / AI Engineer**
+**Senior Backend Engineer (Python / Go) | AI Engineer**
 
 ## Contact
 - **Phone:** +7 911 120-92-22 (preferred)

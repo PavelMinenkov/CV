@@ -1,6 +1,6 @@
 # Миненков Павел Викторович
 
-**Senior Python developer / AI Engineer**
+**Senior Backend Engineer (Python / Go) | AI Engineer**
 
 ## Контакты
 
