@@ -25,4 +25,4 @@ Welcome to my CV repository.
 
 ---
 
-*Last updated: August 31, 2026*
+*Last updated: September 7, 2026*
