@@ -40,7 +40,7 @@ Senior Python engineer with a product focus: I combine deep technical expertise 
 
 ### Senior Python Developer / Team Lead — ARTEUS (arteus.io)
 
-**September 2025 — Present**
+**September 2025 — August 2026**
 
 AI-native company. Role: backend team leadership and AI/LLM engineering.
 

@@ -40,7 +40,7 @@ Senior Python-инженер с продуктовым уклоном: совм�
 
 ### Senior Python Developer / Team Lead — ARTEUS (arteus.io)
 
-**Сентябрь 2025 — настоящее время**
+**Сентябрь 2025 — август 2026**
 
 AI-native компания. Роль: руководство backend-командой и AI/LLM-инжиниринг.
 
