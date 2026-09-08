@@ -5,9 +5,8 @@
 ## Contact
 
 - **Phone:** +44 (787) 440-85-22 (preferred)
-- **Email:** [p.minenkof@ya.ru](mailto:p.minenkof@ya.ru)
+- **Email:** [minikspb@gmail.com](mailto:minikspb@gmail.com)
 - **Telegram:** [@pyblo](https://t.me/pyblo)
-- **Location:** Saint Petersburg, Russia (open to relocation / business travel)
 - **Format:** Remote
 - **Experience:** 14 years (Python: 8+ years)
 

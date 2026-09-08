@@ -5,9 +5,8 @@
 ## Контакты
 
 - **Телефон:** +7 911 120-92-22 (предпочитаемый способ связи)
-- **Email:** [p.minenkof@ya.ru](mailto:p.minenkof@ya.ru)
+- **Email:** [minikspb@gmail.com](mailto:minikspb@gmail.com)
 - **Telegram:** [@pyblo](https://t.me/pyblo)
-- **Локация:** Санкт-Петербург (готов к переезду/командировкам)
 - **Формат работы:** Удалённо
 - **Опыт работы:** 14 лет (Python: 8+ лет)
 
