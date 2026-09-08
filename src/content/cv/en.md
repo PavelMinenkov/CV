@@ -4,7 +4,7 @@
 
 ## Contact
 
-- **Phone:** +7 911 120-92-22 (preferred)
+- **Phone:** +44 (787) 440-85-22 (preferred)
 - **Email:** [p.minenkof@ya.ru](mailto:p.minenkof@ya.ru)
 - **Telegram:** [@pyblo](https://t.me/pyblo)
 - **Location:** Saint Petersburg, Russia (open to relocation / business travel)
